@@ -1,36 +1,8 @@
 package ru.netology.domain;
 
-import java.awt.*;
-
 public class RepostsInfo {
-    private int ownerId;
-    private String ownerName;
-    private Image ownerAvatar;
     private int count;
-
-    public int getOwnerId() {
-        return ownerId;
-    }
-
-    public void setOwnerId(int ownerId) {
-        this.ownerId = ownerId;
-    }
-
-    public String getOwnerName() {
-        return ownerName;
-    }
-
-    public void setOwnerName(String ownerName) {
-        this.ownerName = ownerName;
-    }
-
-    public Image getOwnerAvatar() {
-        return ownerAvatar;
-    }
-
-    public void setOwnerAvatar(Image ownerAvatar) {
-        this.ownerAvatar = ownerAvatar;
-    }
+    private boolean userReposted;
 
     public int getCount() {
         return count;
@@ -38,5 +10,12 @@ public class RepostsInfo {
 
     public void setCount(int count) {
         this.count = count;
+    }
+
+    public void setUserReposted(boolean userReposted) {
+        this.userReposted = userReposted;
+    }
+    public boolean getUserReposted(){
+        return userReposted;
     }
 }
